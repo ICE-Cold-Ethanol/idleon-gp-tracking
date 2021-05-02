@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import { getLayout } from '../components/layouts/MainLayout'
 
 const Index = () => {
