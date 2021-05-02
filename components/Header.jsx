@@ -22,13 +22,31 @@ const NavItem = ({ href, children }) => {
     )
 }
 
+// item for redirect to external link
+const ExternalItem = ({ href, children }) => {
+    return (
+        <a
+            href={href}
+            rel="noreferrer"
+            target="_blank"
+            draggable="false"
+            className="flex items-center p-3 text-lg hover:bg-gray-300"
+        >
+            {children}
+        </a>
+    )
+}
+
 // Navbar
 const Header = () => {
     return (
         <nav className="flex flex-row items-stretch relative overflow-x-auto border-b-4 border-black">
-            <span className="select-none text-3xl p-4">Idleon Guild Sheet</span>
-            <NavItem href="/crop-setting">Crop Setting</NavItem>
-            <NavItem href="/upload">Upload Screenshots</NavItem>
+            <span className="select-none text-3xl p-4">Idleon GP tracking</span>
+            <NavItem href="/">Instruction</NavItem>
+            <NavItem href="/convert">Convert Data</NavItem>
+            <ExternalItem href="https://docs.google.com/spreadsheets/d/1kddJbUFcvV8HqbkTjHAlzpkmn-3j7lkPQ2oUq-XIu8g/edit?usp=sharing">
+                Google Sheet Template
+            </ExternalItem>
         </nav>
     )
 }
