@@ -2,7 +2,7 @@ import { getLayout } from '../components/layouts/MainLayout'
 
 const Instruction = () => {
     return (
-        <article className="prose prose-xl max-w-[75%] flex flex-col">
+        <article className="prose prose-xl flex flex-col">
             <blockquote>
                 Please do not share screenshot of your devtools to others if you
                 are not totally sure about it. It might contain sensitive
@@ -107,6 +107,93 @@ const Instruction = () => {
                 <figcaption>Copy message</figcaption>
             </figure>
             <hr></hr>
+            <h2>3. Data to Google Sheet</h2>
+            <p>
+                Google Sheet is a free solution that can help use manage the
+                guild gp data. I have made a template for you to use, you can
+                get it from the header bar of this site. You should make a copy
+                to your own google drive.
+            </p>
+            <p>
+                But the raw data we copy from the devtools is not suitable to
+                use in Google Sheet, so i created a simple to to covert it for
+                you. Go to the convert section of this site, there is a big text
+                box for you to <strong>paste the raw data</strong>. Then you
+                want to click the <strong>Get Data Entries</strong> button
+                first, if there is no error the converted data should be copied
+                to you clipboard now.
+            </p>
+            <p>
+                Head on to the Google Sheet and find the <em>DATA ENTRY</em>{' '}
+                sheet. Paste the data in the top left empty cell under the
+                header. In the paste option you want to choose{' '}
+                <em>Split text to columns</em>
+            </p>
+            <figure>
+                <img src="/step/chrome/7.png" alt="paste option" />
+                <figcaption>
+                    Choose this option then your text would split to different
+                    columns.
+                </figcaption>
+            </figure>
+            <p>
+                And you want to paste the future data following the existing
+                data.
+            </p>
+            <p>
+                We record the players using their player id, but we would want
+                to know their player name too. Back to the convert page and
+                click <strong>Get Name Table</strong>, and repeat the step but
+                this time paste to <em>NAME TABLE</em> sheet. If any player
+                changed their name, you would need to replace the data in order
+                to see their new name.
+            </p>
+            <figure>
+                <img src="/step/chrome/8.png" alt="paste option" />
+                <figcaption>Your name table should look like this.</figcaption>
+            </figure>
+            <p>
+                You will see the player name generated in the orange column of
+                the <em>DATA ENTRY</em> sheet.
+            </p>
+            <h3>View Statistics</h3>
+            <p>
+                To have a nice table view of the gp records, go to the{' '}
+                <em>VIEW</em> sheet.
+            </p>
+            <figure>
+                <img src="/step/chrome/9.png" alt="paste option" />
+                <figcaption>Nice table view of the records.</figcaption>
+            </figure>
+            <p>
+                There is one final function that can help you to find out the
+                player that did not match the GP requirement. In the{' '}
+                <em>DATA ENTRY</em> sheet there is one green box that allow you
+                to set the target that guild members are required to get between
+                each record interval.
+            </p>
+            <figure>
+                <img src="/step/chrome/10.png" alt="Target option" />
+                <figcaption>The GP requirement.</figcaption>
+            </figure>
+            <p>
+                For example lazy me did not get 20 GP for today, and the
+                requirement is 20 GP per day. The next day guild leader input
+                the data, my record would be marked in red color in the{' '}
+                <em>VIEW</em> sheet.
+            </p>
+            <figure>
+                <img src="/step/chrome/11.png" alt="Failed requirement" />
+                <figcaption>
+                    Record did not reach the requirement and marked in red
+                    color.
+                </figcaption>
+            </figure>
+            <p>
+                Thats all i want to tell you. Thanks for wasting your time
+                reading my horrible English and i hope my tool is useful for
+                you.
+            </p>
         </article>
     )
 }
