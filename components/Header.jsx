@@ -12,7 +12,7 @@ const NavItem = ({ href, children }) => {
             <a
                 draggable="false"
                 className={clsx(
-                    'flex items-center p-3 text-lg hover:bg-gray-300',
+                    'flex items-center p-3 text-xl hover:bg-gray-300',
                     { 'bg-gray-300': pathname === href } // set bg if current path === item link
                 )}
             >
@@ -30,7 +30,7 @@ const ExternalItem = ({ href, children }) => {
             rel="noreferrer"
             target="_blank"
             draggable="false"
-            className="flex items-center p-3 text-lg hover:bg-gray-300"
+            className="flex items-center p-3 text-xl hover:bg-gray-300"
         >
             {children}
         </a>

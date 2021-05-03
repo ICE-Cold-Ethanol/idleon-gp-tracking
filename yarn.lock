@@ -81,24 +81,6 @@
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.2.0.tgz#f3933a44e365864f4dad5db94158106d511e8131"
   integrity sha512-sqKVVVOe5ivCaXDWivIJYVSaEgdQK9ul7a4Kity5Iw7u9+wBAPbX1RMSnLLmp7O4Vzj0WOWwMAJsTL00xwaNug==
 
-"@hookstate/core@^3.0.7":
-  version "3.0.7"
-  resolved "https://registry.yarnpkg.com/@hookstate/core/-/core-3.0.7.tgz#aa91c3ca93771abda4a9729302c088d35bb7abaa"
-  integrity sha512-9aOGwD4tezrXJ7AkiPg0MJ8d9TiRCusf537zPOV4vOJmNn/tyMDMDxd1T4OlqKvNurVTzs9BEIMOuq5OduV7/w==
-
-"@hookstate/devtools@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@hookstate/devtools/-/devtools-3.0.0.tgz#9b289503112f0f95221d0c86e602ada7793bbd3a"
-  integrity sha512-jXI9e+4+dr0FbdtHhQPa0/SmRwLM7twMU0Qf87AgM3DqqFDV9dRPD56jPXaTh8xD1Bt2R72TmGmqdkDhdKG8AQ==
-  dependencies:
-    redux "4.0.5"
-    redux-devtools-extension "2.13.8"
-
-"@hookstate/persistence@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@hookstate/persistence/-/persistence-3.0.0.tgz#973b30d3a3bb1b29f4f59b1afe0d914e71a23882"
-  integrity sha512-xiN22IW0Wjw/uTV1OEUpTtqB8DAJyRobYR3+iv1TyMf72o98KpaZqQrLPvXkfrjlZac5s052BypjpkttX/Cmhw==
-
 "@next/env@10.2.0":
   version "10.2.0"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-10.2.0.tgz#154dbce2efa3ad067ebd20b7d0aa9aed775e7c97"
@@ -2447,19 +2429,6 @@ reduce-css-calc@^2.1.8:
     css-unit-converter "^1.1.1"
     postcss-value-parser "^3.3.0"
 
-redux-devtools-extension@2.13.8:
-  version "2.13.8"
-  resolved "https://registry.yarnpkg.com/redux-devtools-extension/-/redux-devtools-extension-2.13.8.tgz#37b982688626e5e4993ff87220c9bbb7cd2d96e1"
-  integrity sha512-8qlpooP2QqPtZHQZRhx3x3OP5skEV1py/zUdMY28WNAocbafxdG2tRD1MWE7sp8obGMNYuLWanhhQ7EQvT1FBg==
-
-redux@4.0.5:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/redux/-/redux-4.0.5.tgz#4db5de5816e17891de8a80c424232d06f051d93f"
-  integrity sha512-VSz1uMAH24DM6MF72vcojpYPtrTUu3ByVWfPL1nPfVRb5mZVTve5GnNCUV53QM/BZ66xfWrm0CTWoM+Xlz8V1w==
-  dependencies:
-    loose-envify "^1.4.0"
-    symbol-observable "^1.2.0"
-
 regenerator-runtime@^0.13.4:
   version "0.13.7"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.7.tgz#cac2dacc8a1ea675feaabaeb8ae833898ae46f55"
@@ -2817,11 +2786,6 @@ supports-color@^8.0.0:
   integrity sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==
   dependencies:
     has-flag "^4.0.0"
-
-symbol-observable@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
-  integrity sha512-e900nM8RRtGhlV36KGEU9k65K3mPb1WV70OdjfxlG2EAuM1noi/E/BaW/uMhL7bPEssK8QV57vN3esixjUvcXQ==
 
 table@^6.0.4:
   version "6.6.0"

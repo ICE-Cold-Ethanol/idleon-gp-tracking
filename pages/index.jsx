@@ -85,10 +85,11 @@ const Instruction = () => {
                 search bar.
             </p>
             <p>
-                Then there should be only one item left, click on it to see the
-                content of it, click on the small triangle to expand the item
-                content. After a few expansion, the structure of the content
-                should look similar to the one shown in the picture.
+                Then there should be only one or two item left, click on anyone
+                to see the content of it, click on the small triangle to expand
+                the item content. After a few expansion, the correct one should
+                has a structure of content similar to the one shown in the
+                picture. Usually it is the lengthy one.
             </p>
             <figure>
                 <img src="/step/chrome/5.png" alt="filter setting" />
@@ -105,6 +106,7 @@ const Instruction = () => {
                 <img src="/step/chrome/6.png" alt="copy message menu" />
                 <figcaption>Copy message</figcaption>
             </figure>
+            <hr></hr>
         </article>
     )
 }
