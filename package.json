@@ -11,6 +11,7 @@
         "@hookstate/core": "^3.0.7",
         "@hookstate/devtools": "^3.0.0",
         "@hookstate/persistence": "^3.0.0",
+        "@tailwindcss/typography": "^0.4.0",
         "clsx": "^1.1.1",
         "next": "^10.2.0",
         "react": "17.0.2",
