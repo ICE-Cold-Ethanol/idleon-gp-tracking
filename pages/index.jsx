@@ -3,6 +3,11 @@ import { getLayout } from '../components/layouts/MainLayout'
 const Instruction = () => {
     return (
         <article className="prose prose-xl max-w-[75%] flex flex-col">
+            <blockquote>
+                Please do not share screenshot of your devtools to others if you
+                are not totally sure about it. It might contain sensitive
+                personal data.
+            </blockquote>
             <h2>1. Open Chrome DevTools</h2>
             <p>
                 The first thing you want to do is to open chrome devtools. It
@@ -67,11 +72,38 @@ const Instruction = () => {
                 <strong>Name</strong> to view the detail of it.
             </p>
             <figure>
-                <img src="/step/chrome/4.png" alt="network tab" />
+                <img src="/step/chrome/4.png" alt="network tab after filter" />
                 <figcaption>
                     You want to select the WS filter first, and click the name
                     of the item. You should see something like this.
                 </figcaption>
+            </figure>
+            <p>
+                Still too much information here, we need to do some filter
+                again. This time, set the type filter from All to Receive, and
+                enter <code>_guild/.*/m</code> (exclude the backtick) into the
+                search bar.
+            </p>
+            <p>
+                Then there should be only one item left, click on it to see the
+                content of it, click on the small triangle to expand the item
+                content. After a few expansion, the structure of the content
+                should look similar to the one shown in the picture.
+            </p>
+            <figure>
+                <img src="/step/chrome/5.png" alt="filter setting" />
+                <figcaption>
+                    Here is what your filter setting should look like, and the
+                    item structure you are looking for.
+                </figcaption>
+            </figure>
+            <p>
+                Once you find the correct item, right click on it and select
+                copy message.
+            </p>
+            <figure>
+                <img src="/step/chrome/6.png" alt="copy message menu" />
+                <figcaption>Copy message</figcaption>
             </figure>
         </article>
     )
