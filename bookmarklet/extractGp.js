@@ -5,6 +5,7 @@
     // check correct hostname
     if (window.location.hostname !== 'www.legendsofidleon.com') {
         alert(`Stop browsing ${window.location.hostname}, go play Idleon!`)
+        return
     }
 
     // check data exist
@@ -12,6 +13,7 @@
         alert(
             'Guild data not fount. Please make sure that\n1. You are in a guild.\n2. You opened the guild menu.'
         )
+        return
     }
 
     // map data
