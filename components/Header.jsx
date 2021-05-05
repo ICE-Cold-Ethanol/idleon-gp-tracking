@@ -43,9 +43,14 @@ const Header = () => {
         <nav className="flex flex-row items-stretch overflow-x-auto border-b-4 border-black sticky top-0 bg-white">
             <span className="select-none text-3xl p-4">Idleon GP tracking</span>
             <NavItem href="/">Instruction</NavItem>
+            <ExternalItem href="https://docs.google.com/spreadsheets/d/1ve5Jd4i23jLBxlwGimVkQZlkvaehmo6zp-fupol3XCI/edit?usp=sharing">
+                Google Sheet V2
+            </ExternalItem>
+            <div className="border-l-4 border-black"></div>
+            <NavItem href="/instruction-old">Instruction - Old</NavItem>
             <NavItem href="/convert">Convert Data</NavItem>
             <ExternalItem href="https://docs.google.com/spreadsheets/d/1kddJbUFcvV8HqbkTjHAlzpkmn-3j7lkPQ2oUq-XIu8g/edit?usp=sharing">
-                Google Sheet Template
+                Google Sheet
             </ExternalItem>
         </nav>
     )
