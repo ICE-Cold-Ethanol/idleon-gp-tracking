@@ -19,7 +19,7 @@
     const csv = xn
         .map((member) => {
             // date,id,gp
-            return [today, member[7], member[4]].join(',')
+            return [today, member[7], member[0], member[4]].join(',')
         })
         .join('\n')
 
