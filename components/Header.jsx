@@ -40,7 +40,7 @@ const ExternalItem = ({ href, children }) => {
 // Navbar
 const Header = () => {
     return (
-        <nav className="flex flex-row items-stretch relative overflow-x-auto border-b-4 border-black sticky top-0 bg-white">
+        <nav className="flex flex-row items-stretch overflow-x-auto border-b-4 border-black sticky top-0 bg-white">
             <span className="select-none text-3xl p-4">Idleon GP tracking</span>
             <NavItem href="/">Instruction</NavItem>
             <NavItem href="/convert">Convert Data</NavItem>
